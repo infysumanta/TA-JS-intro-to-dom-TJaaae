@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7ead8;
+  line-height: 1.5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li:hover {
+  border: 5px solid #377e80;
+}
+.container {
+  width: 100%;
+  margin: 20px;
+}
+
+.heading {
+  background-color: #377e80;
+  color: #fefc58;
+  text-align: center;
+  padding: 18px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.row {
+  text-align: center;
+}
+
+.col {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  min-height: 500px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+}
+
+.button {
+  background-color: #377e80;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 3px;
+  border: none;
+}
+h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.author {
+  font-size: 15px;
+  color: rgb(146, 146, 146);
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
